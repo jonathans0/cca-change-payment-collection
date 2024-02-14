@@ -12,7 +12,7 @@ exports.main = async (event, callback) => {
       'url': `https://api.stripe.com/v1/subscriptions/${subId}`,
       'headers': {
         'Content-Type': 'application/x-www-form-urlencoded',
-        'Authorization': `Bearer ${process.env.brewing_sk}`
+        'Authorization': `Bearer ${process.env.stripe_sk}`
       },
       form: {
         'collection_method': 'charge_automatically',
