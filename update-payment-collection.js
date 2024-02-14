@@ -27,9 +27,6 @@ exports.main = async (event, callback) => {
              throw new Error(error)
           }
           response = JSON.parse(response.body)
-          console.log(response)
-          
-          console.log("SubID:" + response.id)
           
           callback({
             outputFields: {
